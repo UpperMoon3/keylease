@@ -1,0 +1,36 @@
+{'cpu': 'Apple M1', 'os': 'macOS-26.6.2-arm64-arm-64bit', 'python': '3.10.12'}
+Ed25519 sign                                0.030 ms
+Ed25519 verify                              0.086 ms
+X25519 exchange                             0.029 ms
+ML-KEM-768 keygen (pure Python)             3.017 ms
+ML-KEM-768 encaps (pure Python)             4.098 ms
+ML-KEM-768 decaps (pure Python)             5.417 ms
+ML-KEM-768 keygen (OpenSSL)                 0.061 ms
+ML-KEM-768 encaps (OpenSSL)                 0.015 ms
+ML-KEM-768 decaps (OpenSSL)                 0.022 ms
+ML-DSA-65 sign (OpenSSL)                    0.575 ms
+ML-DSA-65 verify (OpenSSL)                  0.112 ms
+ML-DSA-65 sign (pure Python)               51.784 ms
+ML-DSA-65 verify (pure Python)             10.453 ms
+AES-256-GCM seal 1 KiB                      0.004 ms
+AES-256-GCM open 1 KiB                      0.003 ms
+HKDF-SHA256                                 0.003 ms
+Shamir split 32 B (2,3)                     0.038 ms
+Shamir combine 32 B (2,3)                   0.012 ms
+Shamir split 32 B (3,5)                     0.088 ms
+Shamir combine 32 B (3,5)                   0.018 ms
+Shamir split 32 B (5,9)                     0.237 ms
+Shamir combine 32 B (5,9)                   0.033 ms
+Shamir split 32 B (7,11)                    0.386 ms
+Shamir combine 32 B (7,11)                  0.048 ms
+{'t': 2, 'n': 3, 'pq': True, 'history': 100, 'design': 'L-bg', 'unlock_ms': 1.3535419711843133, 'unlock_bytes_up': 4065, 'unlock_bytes_down': 3978, 'renew_ms': 0.7758339634165168, 'renew_bytes': 909, 'rotate_ms': 3.816624986939132, 'rotate_bytes': 9678, 'put_record_ms': 0.010333023965358734, 'get_record_ms': 0.006332993507385254}
+{'t': 2, 'n': 3, 'pq': False, 'history': 100, 'design': 'L-bg', 'unlock_ms': 1.0787500068545341, 'unlock_bytes_up': 513, 'unlock_bytes_down': 714, 'renew_ms': 0.7741251029074192, 'renew_bytes': 909, 'rotate_ms': 3.376333974301815, 'rotate_bytes': 2862, 'put_record_ms': 0.011584023013710976, 'get_record_ms': 0.006833928637206554}
+{'t': 3, 'n': 5, 'pq': True, 'history': 100, 'design': 'L-bg', 'unlock_ms': 2.320833969861269, 'unlock_bytes_up': 6775, 'unlock_bytes_down': 6630, 'renew_ms': 1.296499976888299, 'renew_bytes': 1515, 'rotate_ms': 5.949957994744182, 'rotate_bytes': 16130, 'put_record_ms': 0.010416959412395954, 'get_record_ms': 0.006458023563027382}
+{'t': 3, 'n': 5, 'pq': False, 'history': 100, 'design': 'L-bg', 'unlock_ms': 1.7592499498277903, 'unlock_bytes_up': 855, 'unlock_bytes_down': 1190, 'renew_ms': 1.3176670763641596, 'renew_bytes': 1515, 'rotate_ms': 5.4033329943194985, 'rotate_bytes': 4770, 'put_record_ms': 0.010416028089821339, 'get_record_ms': 0.0063749030232429504}
+{'t': 5, 'n': 9, 'pq': True, 'history': 100, 'design': 'L-bg', 'unlock_ms': 3.840958932414651, 'unlock_bytes_up': 12195, 'unlock_bytes_down': 11934, 'renew_ms': 2.324958913959563, 'renew_bytes': 2727, 'rotate_ms': 9.958041948266327, 'rotate_bytes': 29034, 'put_record_ms': 0.010458985343575478, 'get_record_ms': 0.0065409112721681595}
+{'t': 5, 'n': 9, 'pq': False, 'history': 100, 'design': 'L-bg', 'unlock_ms': 3.1580410432070494, 'unlock_bytes_up': 1539, 'unlock_bytes_down': 2142, 'renew_ms': 2.3940830724313855, 'renew_bytes': 2727, 'rotate_ms': 8.586417068727314, 'rotate_bytes': 8586, 'put_record_ms': 0.010458985343575478, 'get_record_ms': 0.006458023563027382}
+{'t': 7, 'n': 11, 'pq': True, 'history': 100, 'design': 'L-bg', 'unlock_ms': 4.578666994348168, 'unlock_bytes_up': 14905, 'unlock_bytes_down': 14586, 'renew_ms': 2.8317919932305813, 'renew_bytes': 3333, 'rotate_ms': 12.005958007648587, 'rotate_bytes': 35486, 'put_record_ms': 0.010375049896538258, 'get_record_ms': 0.0063749030232429504}
+{'t': 7, 'n': 11, 'pq': False, 'history': 100, 'design': 'L-bg', 'unlock_ms': 3.8509590085595846, 'unlock_bytes_up': 1881, 'unlock_bytes_down': 2618, 'renew_ms': 2.8328329790383577, 'renew_bytes': 3333, 'rotate_ms': 10.438165976665914, 'rotate_bytes': 10494, 'put_record_ms': 0.010457937605679035, 'get_record_ms': 0.006500049494206905}
+{'t': 3, 'n': 5, 'pq': True, 'history': 1000, 'design': 'L-bg', 'unlock_ms': 2.162500051781535, 'unlock_bytes_up': 6775, 'unlock_bytes_down': 6630, 'renew_ms': 1.2916669948026538, 'renew_bytes': 1515, 'rotate_ms': 13.081667013466358, 'rotate_bytes': 16130, 'put_record_ms': 0.0201669754460454, 'get_record_ms': 0.006334041245281696}
+{'t': 3, 'n': 5, 'pq': True, 'history': 10000, 'design': 'L-bg', 'unlock_ms': 2.1486670011654496, 'unlock_bytes_up': 6775, 'unlock_bytes_down': 6630, 'renew_ms': 1.287457998842001, 'renew_bytes': 1515, 'rotate_ms': 87.23483304493129, 'rotate_bytes': 16130, 'put_record_ms': 0.10433397255837917, 'get_record_ms': 0.006792019121348858}
+{'B1_put_record_ms': 0.009791925549507141, 'B1_get_record_ms': 0.006541027687489986, 'B1_unlock_ms': 0.003374996595084667, 'dr_message_with_session_store_ms': 0.07462501525878906, 'dr_message_without_store_ms': 0.05987496115267277, 'dr_session_record_bytes': 188}

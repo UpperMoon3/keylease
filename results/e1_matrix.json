@@ -1,0 +1,447 @@
+{
+ "designs": {
+  "B0": "B0 plain",
+  "B1": "B1 key store (AFU)",
+  "B2": "B2 key store (presence)",
+  "B3": "B3 single key server",
+  "B4": "B4 single lease custodian",
+  "L-bg": "Lease (3,5), background",
+  "L-strict": "Lease (3,5), strict",
+  "L-strict-afu": "Lease (3,5), strict, AFU-sealed K_dev"
+ },
+ "lease_hours": 72.0,
+ "rows": [
+  {
+   "id": "S1",
+   "scenario": "Disk image only",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B4": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 0
+   }
+  },
+  {
+   "id": "S2",
+   "scenario": "Disk image + storage of every custodian / server",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B4": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 0
+   }
+  },
+  {
+   "id": "S3",
+   "scenario": "AFU key-store use (no passcode), at seizure",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": true,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 0
+   }
+  },
+  {
+   "id": "S4",
+   "scenario": "AFU key-store use, after lease (73 h)",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": false,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 0
+   }
+  },
+  {
+   "id": "S5",
+   "scenario": "Passcode / full key-store use, at seizure",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": true,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": true,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": true,
+    "audit_entries": 5
+   }
+  },
+  {
+   "id": "S6",
+   "scenario": "Passcode / full key-store use, after lease (73 h)",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": false,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 5
+   }
+  },
+  {
+   "id": "S7",
+   "scenario": "Full use at 2 h; owner revoked at 1 h",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": false,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": false,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 5
+   }
+  },
+  {
+   "id": "S8",
+   "scenario": "As S6; one custodian ignores expiry and revocation",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 5
+   }
+  },
+  {
+   "id": "S9",
+   "scenario": "As S6; two custodians (t-1) ignore expiry and revocation",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 5
+   }
+  },
+  {
+   "id": "S10",
+   "scenario": "As S6; three custodians (t) ignore expiry and revocation",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": true,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": true,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": true,
+    "audit_entries": 5
+   }
+  },
+  {
+   "id": "S11",
+   "scenario": "AFU use at seizure; three custodians skip the presence check",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": false,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": true,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": true,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": true,
+    "audit_entries": 5
+   }
+  },
+  {
+   "id": "S12",
+   "scenario": "Message deleted, epoch rotated; old image + full use",
+   "B0": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B1": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B2": {
+    "recovered": true,
+    "audit_entries": 0
+   },
+   "B3": {
+    "recovered": false,
+    "audit_entries": 1
+   },
+   "B4": {
+    "recovered": false,
+    "audit_entries": 1
+   },
+   "L-bg": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict": {
+    "recovered": false,
+    "audit_entries": 5
+   },
+   "L-strict-afu": {
+    "recovered": false,
+    "audit_entries": 5
+   }
+  }
+ ]
+}

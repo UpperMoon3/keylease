@@ -1,0 +1,24 @@
+S1 Disk image only
+    B0:BROKEN  B1:safe  B2:safe  B3:safe  B4:safe  L-bg:safe  L-strict:safe  L-strict-afu:safe
+S2 Disk image + storage of every custodian / server
+    B0:BROKEN  B1:safe  B2:safe  B3:BROKEN  B4:safe  L-bg:safe  L-strict:safe  L-strict-afu:safe
+S3 AFU key-store use (no passcode), at seizure
+    B0:BROKEN  B1:BROKEN  B2:safe  B3:BROKEN(logged 1)  B4:BROKEN(logged 1)  L-bg:BROKEN(logged 5)  L-strict:safe  L-strict-afu:safe
+S4 AFU key-store use, after lease (73 h)
+    B0:BROKEN  B1:BROKEN  B2:safe  B3:BROKEN(logged 1)  B4:safe(logged 1)  L-bg:safe(logged 5)  L-strict:safe  L-strict-afu:safe
+S5 Passcode / full key-store use, at seizure
+    B0:BROKEN  B1:BROKEN  B2:BROKEN  B3:BROKEN(logged 1)  B4:BROKEN(logged 1)  L-bg:BROKEN(logged 5)  L-strict:BROKEN(logged 5)  L-strict-afu:BROKEN(logged 5)
+S6 Passcode / full key-store use, after lease (73 h)
+    B0:BROKEN  B1:BROKEN  B2:BROKEN  B3:BROKEN(logged 1)  B4:safe(logged 1)  L-bg:safe(logged 5)  L-strict:safe(logged 5)  L-strict-afu:safe(logged 5)
+S7 Full use at 2 h; owner revoked at 1 h
+    B0:BROKEN  B1:BROKEN  B2:BROKEN  B3:safe(logged 1)  B4:safe(logged 1)  L-bg:safe(logged 5)  L-strict:safe(logged 5)  L-strict-afu:safe(logged 5)
+S8 As S6; one custodian ignores expiry and revocation
+    B0:BROKEN  B1:BROKEN  B2:BROKEN  B3:BROKEN(logged 1)  B4:BROKEN(logged 1)  L-bg:safe(logged 5)  L-strict:safe(logged 5)  L-strict-afu:safe(logged 5)
+S9 As S6; two custodians (t-1) ignore expiry and revocation
+    B0:BROKEN  B1:BROKEN  B2:BROKEN  B3:BROKEN(logged 1)  B4:BROKEN(logged 1)  L-bg:safe(logged 5)  L-strict:safe(logged 5)  L-strict-afu:safe(logged 5)
+S10 As S6; three custodians (t) ignore expiry and revocation
+    B0:BROKEN  B1:BROKEN  B2:BROKEN  B3:BROKEN(logged 1)  B4:BROKEN(logged 1)  L-bg:BROKEN(logged 5)  L-strict:BROKEN(logged 5)  L-strict-afu:BROKEN(logged 5)
+S11 AFU use at seizure; three custodians skip the presence check
+    B0:BROKEN  B1:BROKEN  B2:safe  B3:BROKEN(logged 1)  B4:BROKEN(logged 1)  L-bg:BROKEN(logged 5)  L-strict:safe(logged 5)  L-strict-afu:BROKEN(logged 5)
+S12 Message deleted, epoch rotated; old image + full use
+    B0:BROKEN  B1:BROKEN  B2:BROKEN  B3:safe(logged 1)  B4:safe(logged 1)  L-bg:safe(logged 5)  L-strict:safe(logged 5)  L-strict-afu:safe(logged 5)

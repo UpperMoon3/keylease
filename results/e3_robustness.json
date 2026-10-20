@@ -1,0 +1,115 @@
+{
+ "byzantine": [
+  {
+   "tampering_custodians": 1,
+   "unlock_ok": true,
+   "detected": 1
+  },
+  {
+   "tampering_custodians": 2,
+   "unlock_ok": true,
+   "detected": 2
+  },
+  {
+   "tampering_custodians": 3,
+   "unlock_ok": false,
+   "detected": 3
+  }
+ ],
+ "replay": {
+  "renew_replies": [
+   "replay",
+   "replay",
+   "replay",
+   "replay",
+   "replay"
+  ],
+  "get_replies": [
+   "replay",
+   "replay",
+   "replay",
+   "replay",
+   "replay"
+  ],
+  "lease_extended_by_replay": false
+ },
+ "missing_key": {
+  "renew": "AccessDenied (presence key)",
+  "rotate": "AccessDenied (presence key)",
+  "reactivate_with_wrong_key": 0
+ },
+ "hndl": [
+  {
+   "transport": "X25519 only",
+   "custodians_refuse_after_lease": true,
+   "shares_recovered_from_transcript": 5,
+   "data_recovered": true
+  },
+  {
+   "transport": "X25519+ML-KEM-768",
+   "custodians_refuse_after_lease": true,
+   "shares_recovered_from_transcript": 0,
+   "data_recovered": false
+  }
+ ],
+ "delayed_renewal": {
+  "withheld_requests": 5,
+  "replies_at_71h": [
+   "stale or unknown challenge",
+   "stale or unknown challenge",
+   "stale or unknown challenge",
+   "stale or unknown challenge",
+   "stale or unknown challenge"
+  ],
+  "afu_reads_after_lease": false
+ },
+ "forged_receipts": {
+  "rotation_promoted": false,
+  "data_readable_after": true
+ },
+ "malformed_replies": {
+  "garbled_custodians": 2,
+  "unlock_ok_bogus_and_empty": true,
+  "unlock_ok_truncated": true,
+  "errors": [
+   [
+    1,
+    "malformed reply"
+   ],
+   [
+    2,
+    "empty or short reply"
+   ],
+   [
+    1,
+    "unreachable"
+   ],
+   [
+    2,
+    "unreachable"
+   ]
+  ]
+ },
+ "autonomous_erasure": {
+  "custodians_still_holding_shares": 0,
+  "reactivations_accepted_after_erasure": 0
+ },
+ "upload_forward_secrecy": {
+  "recorded_uploads": 5,
+  "decryptable_after_custodian_compromise": 0
+ },
+ "delayed_upload": {
+  "withheld_uploads": 5,
+  "replies": [
+   "stale or unknown challenge",
+   "stale or unknown challenge",
+   "stale or unknown challenge",
+   "stale or unknown challenge",
+   "stale or unknown challenge"
+  ]
+ },
+ "erasure_boundary": {
+  "shares_one_second_before": true,
+  "shares_at_horizon": false
+ }
+}

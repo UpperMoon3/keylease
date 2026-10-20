@@ -1,0 +1,2386 @@
+{
+ "rtt_summary": {
+  "AWS Frankfurt": {
+   "median": 86.18289546575397,
+   "p95": 123.93361808499313,
+   "n": 100,
+   "jurisdiction": "DE"
+  },
+  "AWS Stockholm": {
+   "median": 109.12472900236025,
+   "p95": 139.46522494079537,
+   "n": 100,
+   "jurisdiction": "SE"
+  },
+  "AWS UAE": {
+   "median": 197.56466697435826,
+   "p95": 232.81681671505788,
+   "n": 99,
+   "jurisdiction": "AE"
+  },
+  "AWS Mumbai": {
+   "median": 210.31041647074744,
+   "p95": 247.43924587382932,
+   "n": 100,
+   "jurisdiction": "IN"
+  },
+  "AWS Virginia": {
+   "median": 184.51070797163993,
+   "p95": 208.74299128772688,
+   "n": 99,
+   "jurisdiction": "US"
+  },
+  "AWS Tokyo": {
+   "median": 148.1997919618152,
+   "p95": 343.1160041887778,
+   "n": 100,
+   "jurisdiction": "JP"
+  },
+  "Hetzner Falkenstein": {
+   "median": 94.26285448716953,
+   "p95": 117.47696492820978,
+   "n": 100,
+   "jurisdiction": "DE"
+  },
+  "Hetzner Helsinki": {
+   "median": 61.44737498834729,
+   "p95": 94.90905145648863,
+   "n": 100,
+   "jurisdiction": "FI"
+  },
+  "Yandex Moscow": {
+   "median": 49.61477097822353,
+   "p95": 83.65931041771546,
+   "n": 100,
+   "jurisdiction": "RU"
+  },
+  "Cloudflare anycast": {
+   "median": 10.304187482688576,
+   "p95": 60.599597898544744,
+   "n": 100,
+   "jurisdiction": "anycast"
+  },
+  "Google anycast": {
+   "median": 85.34799999324605,
+   "p95": 153.0629541550297,
+   "n": 100,
+   "jurisdiction": "anycast"
+  }
+ },
+ "placements": [
+  {
+   "placement": "P1 (2,3) three providers",
+   "t": 2,
+   "n": 3,
+   "endpoints": [
+    "AWS Frankfurt",
+    "Hetzner Helsinki",
+    "Yandex Moscow"
+   ],
+   "rounds_used": 100,
+   "rounds_total": 100,
+   "net_median_ms": 61.52874999679625,
+   "net_p95_ms": 94.66785565600728,
+   "slowest_needed_median_ms": 86.18289546575397,
+   "cpu_unlock_ms_python": 1.3535419711843133,
+   "jur_to_bypass_expiry": 2,
+   "jur_to_deny_unlock": 2,
+   "prov_to_bypass_expiry": 2,
+   "prov_to_deny_unlock": 2,
+   "home_to_bypass_expiry": 2,
+   "home_to_deny_unlock": 2,
+   "effective_bypass": 2,
+   "effective_deny": 2
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "t": 3,
+   "n": 5,
+   "endpoints": [
+    "AWS Frankfurt",
+    "AWS Stockholm",
+    "AWS UAE",
+    "AWS Mumbai",
+    "AWS Virginia"
+   ],
+   "rounds_used": 98,
+   "rounds_total": 100,
+   "net_median_ms": 184.66983299003914,
+   "net_p95_ms": 199.4904562307056,
+   "slowest_needed_median_ms": 210.9271454392001,
+   "cpu_unlock_ms_python": 2.320833969861269,
+   "jur_to_bypass_expiry": 3,
+   "jur_to_deny_unlock": 3,
+   "prov_to_bypass_expiry": 1,
+   "prov_to_deny_unlock": 1,
+   "home_to_bypass_expiry": 1,
+   "home_to_deny_unlock": 1,
+   "effective_bypass": 1,
+   "effective_deny": 1
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "t": 3,
+   "n": 5,
+   "endpoints": [
+    "AWS Frankfurt",
+    "AWS Stockholm",
+    "Hetzner Helsinki",
+    "Hetzner Falkenstein",
+    "Yandex Moscow"
+   ],
+   "rounds_used": 100,
+   "rounds_total": 100,
+   "net_median_ms": 86.18289546575397,
+   "net_p95_ms": 110.69410137133673,
+   "slowest_needed_median_ms": 109.22962456243113,
+   "cpu_unlock_ms_python": 2.320833969861269,
+   "jur_to_bypass_expiry": 2,
+   "jur_to_deny_unlock": 2,
+   "prov_to_bypass_expiry": 2,
+   "prov_to_deny_unlock": 2,
+   "home_to_bypass_expiry": 2,
+   "home_to_deny_unlock": 2,
+   "effective_bypass": 2,
+   "effective_deny": 2
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "t": 3,
+   "n": 5,
+   "endpoints": [
+    "AWS Frankfurt",
+    "AWS UAE",
+    "AWS Mumbai",
+    "Hetzner Helsinki",
+    "Yandex Moscow"
+   ],
+   "rounds_used": 99,
+   "rounds_total": 100,
+   "net_median_ms": 86.1754579236731,
+   "net_p95_ms": 155.72182082105425,
+   "slowest_needed_median_ms": 210.38495795801282,
+   "cpu_unlock_ms_python": 2.320833969861269,
+   "jur_to_bypass_expiry": 3,
+   "jur_to_deny_unlock": 3,
+   "prov_to_bypass_expiry": 1,
+   "prov_to_deny_unlock": 1,
+   "home_to_bypass_expiry": 1,
+   "home_to_deny_unlock": 1,
+   "effective_bypass": 1,
+   "effective_deny": 1
+  },
+  {
+   "placement": "P5 (4,7) balanced",
+   "t": 4,
+   "n": 7,
+   "endpoints": [
+    "AWS Frankfurt",
+    "AWS Stockholm",
+    "AWS UAE",
+    "Hetzner Helsinki",
+    "Hetzner Falkenstein",
+    "Yandex Moscow",
+    "AWS Mumbai"
+   ],
+   "rounds_used": 99,
+   "rounds_total": 100,
+   "net_median_ms": 94.26354197785258,
+   "net_p95_ms": 132.0428955368696,
+   "slowest_needed_median_ms": 210.7339589856565,
+   "cpu_unlock_ms_python": null,
+   "jur_to_bypass_expiry": 3,
+   "jur_to_deny_unlock": 3,
+   "prov_to_bypass_expiry": 1,
+   "prov_to_deny_unlock": 1,
+   "home_to_bypass_expiry": 1,
+   "home_to_deny_unlock": 1,
+   "effective_bypass": 1,
+   "effective_deny": 1
+  },
+  {
+   "placement": "P6 (5,9) global",
+   "t": 5,
+   "n": 9,
+   "endpoints": [
+    "AWS Frankfurt",
+    "AWS Stockholm",
+    "AWS UAE",
+    "AWS Mumbai",
+    "AWS Tokyo",
+    "AWS Virginia",
+    "Hetzner Helsinki",
+    "Hetzner Falkenstein",
+    "Yandex Moscow"
+   ],
+   "rounds_used": 98,
+   "rounds_total": 100,
+   "net_median_ms": 109.12472900236025,
+   "net_p95_ms": 147.7807499410118,
+   "slowest_needed_median_ms": 210.9271454392001,
+   "cpu_unlock_ms_python": 3.840958932414651,
+   "jur_to_bypass_expiry": 4,
+   "jur_to_deny_unlock": 4,
+   "prov_to_bypass_expiry": 1,
+   "prov_to_deny_unlock": 1,
+   "home_to_bypass_expiry": 1,
+   "home_to_deny_unlock": 1,
+   "effective_bypass": 1,
+   "effective_deny": 1
+  }
+ ],
+ "tradeoff": [
+  {
+   "t": 1,
+   "n": 1,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.010000000000000009,
+   "expiry_bypass": 0.01
+  },
+  {
+   "t": 1,
+   "n": 1,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.010000000000000009,
+   "expiry_bypass": 0.05
+  },
+  {
+   "t": 1,
+   "n": 1,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0010000000000000009,
+   "expiry_bypass": 0.01
+  },
+  {
+   "t": 1,
+   "n": 1,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0010000000000000009,
+   "expiry_bypass": 0.05
+  },
+  {
+   "t": 1,
+   "n": 3,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 9.999999999177334e-07,
+   "expiry_bypass": 0.029700999999999998
+  },
+  {
+   "t": 1,
+   "n": 3,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 9.999999999177334e-07,
+   "expiry_bypass": 0.142625
+  },
+  {
+   "t": 1,
+   "n": 3,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 9.999999717180685e-10,
+   "expiry_bypass": 0.029700999999999998
+  },
+  {
+   "t": 1,
+   "n": 3,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 9.999999717180685e-10,
+   "expiry_bypass": 0.142625
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.00029799999999990945,
+   "expiry_bypass": 0.00029800000000000003
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.00029799999999990945,
+   "expiry_bypass": 0.007250000000000001
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 2.9980000000318086e-06,
+   "expiry_bypass": 0.00029800000000000003
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 2.9980000000318086e-06,
+   "expiry_bypass": 0.007250000000000001
+  },
+  {
+   "t": 3,
+   "n": 3,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.029700999999999977,
+   "expiry_bypass": 1.0000000000000002e-06
+  },
+  {
+   "t": 3,
+   "n": 3,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.029700999999999977,
+   "expiry_bypass": 0.00012500000000000003
+  },
+  {
+   "t": 3,
+   "n": 3,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.002997000999999999,
+   "expiry_bypass": 1.0000000000000002e-06
+  },
+  {
+   "t": 3,
+   "n": 3,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.002997000999999999,
+   "expiry_bypass": 0.00012500000000000003
+  },
+  {
+   "t": 1,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 1.000000082740371e-10,
+   "expiry_bypass": 0.0490099501
+  },
+  {
+   "t": 1,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 1.000000082740371e-10,
+   "expiry_bypass": 0.22621906249999996
+  },
+  {
+   "t": 1,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 9.992007221626409e-16,
+   "expiry_bypass": 0.0490099501
+  },
+  {
+   "t": 1,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 9.992007221626409e-16,
+   "expiry_bypass": 0.22621906249999996
+  },
+  {
+   "t": 2,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 4.959999999609721e-08,
+   "expiry_bypass": 0.0009801496
+  },
+  {
+   "t": 2,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 4.959999999609721e-08,
+   "expiry_bypass": 0.0225925
+  },
+  {
+   "t": 2,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 4.9960036108132044e-12,
+   "expiry_bypass": 0.0009801496
+  },
+  {
+   "t": 2,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 4.9960036108132044e-12,
+   "expiry_bypass": 0.0225925
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 9.850600000027576e-06,
+   "expiry_bypass": 9.850600000000002e-06
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 9.850600000027576e-06,
+   "expiry_bypass": 0.0011581250000000003
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 9.985005933188518e-09,
+   "expiry_bypass": 9.850600000000002e-06
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 9.985005933188518e-09,
+   "expiry_bypass": 0.0011581250000000003
+  },
+  {
+   "t": 4,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.0009801496000000354,
+   "expiry_bypass": 4.96e-08
+  },
+  {
+   "t": 4,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.0009801496000000354,
+   "expiry_bypass": 3.0000000000000008e-05
+  },
+  {
+   "t": 4,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 9.980014995969455e-06,
+   "expiry_bypass": 4.96e-08
+  },
+  {
+   "t": 4,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 9.980014995969455e-06,
+   "expiry_bypass": 3.0000000000000008e-05
+  },
+  {
+   "t": 5,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.04900995010000009,
+   "expiry_bypass": 1.0000000000000002e-10
+  },
+  {
+   "t": 5,
+   "n": 5,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.04900995010000009,
+   "expiry_bypass": 3.125000000000001e-07
+  },
+  {
+   "t": 5,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.004990009995000988,
+   "expiry_bypass": 1.0000000000000002e-10
+  },
+  {
+   "t": 5,
+   "n": 5,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.004990009995000988,
+   "expiry_bypass": 3.125000000000001e-07
+  },
+  {
+   "t": 1,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 9.992007221626409e-15,
+   "expiry_bypass": 0.06793465209301
+  },
+  {
+   "t": 1,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 9.992007221626409e-15,
+   "expiry_bypass": 0.3016627039062499
+  },
+  {
+   "t": 1,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.06793465209301
+  },
+  {
+   "t": 1,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.3016627039062499
+  },
+  {
+   "t": 2,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 6.9400041269318535e-12,
+   "expiry_bypass": 0.00203104163494
+  },
+  {
+   "t": 2,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 6.9400041269318535e-12,
+   "expiry_bypass": 0.0443805421875
+  },
+  {
+   "t": 2,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.00203104163494
+  },
+  {
+   "t": 2,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0443805421875
+  },
+  {
+   "t": 3,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 2.0651500509671905e-09,
+   "expiry_bypass": 3.396253015000001e-05
+  },
+  {
+   "t": 3,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 2.0651500509671905e-09,
+   "expiry_bypass": 0.0037570429687500003
+  },
+  {
+   "t": 3,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 2.0872192862952943e-14,
+   "expiry_bypass": 3.396253015000001e-05
+  },
+  {
+   "t": 3,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 2.0872192862952943e-14,
+   "expiry_bypass": 0.0037570429687500003
+  },
+  {
+   "t": 4,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 3.416698000080487e-07,
+   "expiry_bypass": 3.416698e-07
+  },
+  {
+   "t": 4,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 3.416698000080487e-07,
+   "expiry_bypass": 0.000193578125
+  },
+  {
+   "t": 4,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 3.491607003525132e-11,
+   "expiry_bypass": 3.416698e-07
+  },
+  {
+   "t": 4,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 3.491607003525132e-11,
+   "expiry_bypass": 0.000193578125
+  },
+  {
+   "t": 5,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 3.3962530149977965e-05,
+   "expiry_bypass": 2.06515e-09
+  },
+  {
+   "t": 5,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 3.3962530149977965e-05,
+   "expiry_bypass": 6.027343750000001e-06
+  },
+  {
+   "t": 5,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 3.4895125899936374e-08,
+   "expiry_bypass": 2.06515e-09
+  },
+  {
+   "t": 5,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 3.4895125899936374e-08,
+   "expiry_bypass": 6.027343750000001e-06
+  },
+  {
+   "t": 6,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.002031041634940056,
+   "expiry_bypass": 6.9400000000000015e-12
+  },
+  {
+   "t": 6,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.002031041634940056,
+   "expiry_bypass": 1.0468750000000004e-07
+  },
+  {
+   "t": 6,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 2.0930104915994896e-05,
+   "expiry_bypass": 6.9400000000000015e-12
+  },
+  {
+   "t": 6,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 2.0930104915994896e-05,
+   "expiry_bypass": 1.0468750000000004e-07
+  },
+  {
+   "t": 7,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.06793465209301008,
+   "expiry_bypass": 1.0000000000000002e-14
+  },
+  {
+   "t": 7,
+   "n": 7,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.06793465209301008,
+   "expiry_bypass": 7.812500000000003e-10
+  },
+  {
+   "t": 7,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.006979034965020947,
+   "expiry_bypass": 1.0000000000000002e-14
+  },
+  {
+   "t": 7,
+   "n": 7,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.006979034965020947,
+   "expiry_bypass": 7.812500000000003e-10
+  },
+  {
+   "t": 1,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0864827525163591
+  },
+  {
+   "t": 1,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.3697505902753906
+  },
+  {
+   "t": 1,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0864827525163591
+  },
+  {
+   "t": 1,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.3697505902753906
+  },
+  {
+   "t": 2,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 8.881784197001252e-16,
+   "expiry_bypass": 0.0034357300178462923
+  },
+  {
+   "t": 2,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 8.881784197001252e-16,
+   "expiry_bypass": 0.0712113961953125
+  },
+  {
+   "t": 2,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0034357300178462923
+  },
+  {
+   "t": 2,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0712113961953125
+  },
+  {
+   "t": 3,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 3.5371705564557487e-13,
+   "expiry_bypass": 8.029476538112801e-05
+  },
+  {
+   "t": 3,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 3.5371705564557487e-13,
+   "expiry_bypass": 0.008361039546874999
+  },
+  {
+   "t": 3,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 8.029476538112801e-05
+  },
+  {
+   "t": 3,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.008361039546874999
+  },
+  {
+   "t": 4,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 8.185885302935958e-11,
+   "expiry_bypass": 1.210432831444e-06
+  },
+  {
+   "t": 4,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 8.185885302935958e-11,
+   "expiry_bypass": 0.0006425746953124999
+  },
+  {
+   "t": 4,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 1.1102230246251565e-16,
+   "expiry_bypass": 1.210432831444e-06
+  },
+  {
+   "t": 4,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 1.1102230246251565e-16,
+   "expiry_bypass": 0.0006425746953124999
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 1.2185368603034874e-08,
+   "expiry_bypass": 1.2185368570000003e-08
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 1.2185368603034874e-08,
+   "expiry_bypass": 3.322220703125001e-05
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 1.255662240851052e-13,
+   "expiry_bypass": 1.2185368570000003e-08
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 1.255662240851052e-13,
+   "expiry_bypass": 3.322220703125001e-05
+  },
+  {
+   "t": 6,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 1.2104328314110901e-06,
+   "expiry_bypass": 8.185884400000002e-11
+  },
+  {
+   "t": 6,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 1.2104328314110901e-06,
+   "expiry_bypass": 1.1510234375000004e-06
+  },
+  {
+   "t": 6,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 1.2549683514606613e-10,
+   "expiry_bypass": 8.185884400000002e-11
+  },
+  {
+   "t": 6,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 1.2549683514606613e-10,
+   "expiry_bypass": 1.1510234375000004e-06
+  },
+  {
+   "t": 7,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 8.029476538118363e-05,
+   "expiry_bypass": 3.5372800000000006e-13
+  },
+  {
+   "t": 7,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 8.029476538118363e-05,
+   "expiry_bypass": 2.571875000000001e-08
+  },
+  {
+   "t": 7,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 8.362275516482498e-08,
+   "expiry_bypass": 3.5372800000000006e-13
+  },
+  {
+   "t": 7,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 8.362275516482498e-08,
+   "expiry_bypass": 2.571875000000001e-08
+  },
+  {
+   "t": 8,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.00343573001784625,
+   "expiry_bypass": 8.920000000000003e-16
+  },
+  {
+   "t": 8,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.00343573001784625,
+   "expiry_bypass": 3.3593750000000016e-10
+  },
+  {
+   "t": 8,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 3.583237749649193e-05,
+   "expiry_bypass": 8.920000000000003e-16
+  },
+  {
+   "t": 8,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 3.583237749649193e-05,
+   "expiry_bypass": 3.3593750000000016e-10
+  },
+  {
+   "t": 9,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.08648275251635917,
+   "expiry_bypass": 1.0000000000000003e-18
+  },
+  {
+   "t": 9,
+   "n": 9,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.08648275251635917,
+   "expiry_bypass": 1.953125000000001e-12
+  },
+  {
+   "t": 9,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.00896408387412595,
+   "expiry_bypass": 1.0000000000000003e-18
+  },
+  {
+   "t": 9,
+   "n": 9,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.00896408387412595,
+   "expiry_bypass": 1.953125000000001e-12
+  },
+  {
+   "t": 1,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.10466174574128355
+  },
+  {
+   "t": 1,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.4311999077235399
+  },
+  {
+   "t": 1,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.10466174574128355
+  },
+  {
+   "t": 1,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.4311999077235399
+  },
+  {
+   "t": 2,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0051797174903150615
+  },
+  {
+   "t": 2,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.1018945911424316
+  },
+  {
+   "t": 2,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0051797174903150615
+  },
+  {
+   "t": 2,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.1018945911424316
+  },
+  {
+   "t": 3,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0001553726291550361
+  },
+  {
+   "t": 3,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.015235297305297851
+  },
+  {
+   "t": 3,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0001553726291550361
+  },
+  {
+   "t": 3,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.015235297305297851
+  },
+  {
+   "t": 4,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 1.5987211554602254e-14,
+   "expiry_bypass": 3.119754574429228e-06
+  },
+  {
+   "t": 4,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 1.5987211554602254e-14,
+   "expiry_bypass": 0.0015522509099609376
+  },
+  {
+   "t": 4,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 3.119754574429228e-06
+  },
+  {
+   "t": 4,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.0015522509099609376
+  },
+  {
+   "t": 5,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 3.1860070137668117e-12,
+   "expiry_bypass": 4.393892633616101e-08
+  },
+  {
+   "t": 5,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 3.1860070137668117e-12,
+   "expiry_bypass": 0.00011193023676757813
+  },
+  {
+   "t": 5,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.0,
+   "expiry_bypass": 4.393892633616101e-08
+  },
+  {
+   "t": 5,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.0,
+   "expiry_bypass": 0.00011193023676757813
+  },
+  {
+   "t": 6,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 4.42543446332877e-10,
+   "expiry_bypass": 4.4254343383479994e-10
+  },
+  {
+   "t": 6,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 4.42543446332877e-10,
+   "expiry_bypass": 5.801345058593751e-06
+  },
+  {
+   "t": 6,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 4.440892098500626e-16,
+   "expiry_bypass": 4.4254343383479994e-10
+  },
+  {
+   "t": 6,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 4.440892098500626e-16,
+   "expiry_bypass": 5.801345058593751e-06
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 4.3938926275188805e-08,
+   "expiry_bypass": 3.1860307810000006e-12
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 4.3938926275188805e-08,
+   "expiry_bypass": 2.1561391601562503e-07
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 4.597433544972773e-13,
+   "expiry_bypass": 3.1860307810000006e-12
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 4.597433544972773e-13,
+   "expiry_bypass": 2.1561391601562503e-07
+  },
+  {
+   "t": 8,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 3.1197545744543476e-06,
+   "expiry_bypass": 1.6063948000000002e-14
+  },
+  {
+   "t": 8,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 3.1197545744543476e-06,
+   "expiry_bypass": 5.624023437500003e-09
+  },
+  {
+   "t": 8,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 3.281566129942348e-10,
+   "expiry_bypass": 1.6063948000000002e-14
+  },
+  {
+   "t": 8,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 3.281566129942348e-10,
+   "expiry_bypass": 5.624023437500003e-09
+  },
+  {
+   "t": 9,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.00015537262915499284,
+   "expiry_bypass": 5.401450000000001e-17
+  },
+  {
+   "t": 9,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.00015537262915499284,
+   "expiry_bypass": 9.797363281250005e-11
+  },
+  {
+   "t": 9,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 1.6401276736743853e-07,
+   "expiry_bypass": 5.401450000000001e-17
+  },
+  {
+   "t": 9,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 1.6401276736743853e-07,
+   "expiry_bypass": 9.797363281250005e-11
+  },
+  {
+   "t": 10,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.005179717490315094,
+   "expiry_bypass": 1.09e-19
+  },
+  {
+   "t": 10,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.005179717490315094,
+   "expiry_bypass": 1.0253906250000005e-12
+  },
+  {
+   "t": 10,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 5.467098815437055e-05,
+   "expiry_bypass": 1.09e-19
+  },
+  {
+   "t": 10,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 5.467098815437055e-05,
+   "expiry_bypass": 1.0253906250000005e-12
+  },
+  {
+   "t": 11,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.01,
+   "unavailable": 0.10466174574128362,
+   "expiry_bypass": 1.0000000000000003e-22
+  },
+  {
+   "t": 11,
+   "n": 11,
+   "u": 0.01,
+   "p": 0.05,
+   "unavailable": 0.10466174574128362,
+   "expiry_bypass": 4.882812500000003e-15
+  },
+  {
+   "t": 11,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.01,
+   "unavailable": 0.010945164670461582,
+   "expiry_bypass": 1.0000000000000003e-22
+  },
+  {
+   "t": 11,
+   "n": 11,
+   "u": 0.001,
+   "p": 0.05,
+   "unavailable": 0.010945164670461582,
+   "expiry_bypass": 4.882812500000003e-15
+  }
+ ],
+ "seizure_points": {
+  "24h": {
+   "lease72_q0": 0.861345,
+   "lease72_q05": 0.51238,
+   "b1_reboot72": 0.86446
+  },
+  "168h": {
+   "lease72_q0": 0.192885,
+   "lease72_q05": 0.100635,
+   "b1_reboot72": 0.19689
+  }
+ },
+ "seizure_model": {
+  "assumptions": {
+   "U_since_last_unlock": "Exp(mean 1 h)",
+   "tau": "lognormal, median m, sigma 1.0",
+   "owner_revocation": "with prob. q_aware, lognormal median 6 h, sigma 1.0"
+  },
+  "median_tau_s": [
+   900.0,
+   1042.2657911068295,
+   1207.0199770128286,
+   1397.81736802558,
+   1618.7746943422753,
+   1874.6594304692983,
+   2170.9926603932913,
+   2514.168202968817,
+   2911.5905678254785,
+   3371.8347183931182,
+   3904.831089163865,
+   4522.079849206572,
+   5236.899034979491,
+   6064.711906266104,
+   7023.379725354946,
+   8133.58713965638,
+   9419.288482944761,
+   10908.224624822082,
+   12632.5215201791,
+   14629.383373226136,
+   16941.895372111823,
+   19619.95331429252,
+   22721.340180666848,
+   26312.97288712237,
+   30472.346113965737,
+   35289.204365948484,
+   40867.47834000654,
+   47327.527380653504,
+   54808.73640725208,
+   63472.523345633665,
+   73505.82195375956,
+   85125.11518843666,
+   98581.10613881772,
+   114164.1273088458,
+   132210.40496175,
+   153109.313688903,
+   177311.7777308755,
+   205340.00032136592,
+   237798.7309786946,
+   275388.31385301036,
+   318919.79866620427,
+   369332.4402849581,
+   427713.96450557536,
+   495324.037314269,
+   573621.4440062061,
+   664295.5645921894,
+   769302.8246204851,
+   890908.9078930984,
+   1031737.6418770246,
+   1194827.6105840579,
+   1383697.716424085,
+   1602423.1056238476,
+   1855723.095412114,
+   2149063.0001276913,
+   2488772.053296117,
+   2882179.970014713,
+   3337775.096177382,
+   3865387.5568377716,
+   4476401.3554022405,
+   5184000.0
+  ],
+  "curves": {
+   "900.0": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 1.0,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99999,
+    "Lease L=24h, q=0.5": 0.99375,
+    "Lease L=72h, q=0.0": 1.0,
+    "Lease L=72h, q=0.5": 0.993755,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.993755
+   },
+   "1042.2657911068295": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 1.0,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99999,
+    "Lease L=24h, q=0.5": 0.99184,
+    "Lease L=72h, q=0.0": 1.0,
+    "Lease L=72h, q=0.5": 0.991845,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.991845
+   },
+   "1207.0199770128286": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 1.0,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.999985,
+    "Lease L=24h, q=0.5": 0.989705,
+    "Lease L=72h, q=0.0": 1.0,
+    "Lease L=72h, q=0.5": 0.989715,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.989715
+   },
+   "1397.81736802558": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 1.0,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99998,
+    "Lease L=24h, q=0.5": 0.98676,
+    "Lease L=72h, q=0.0": 1.0,
+    "Lease L=72h, q=0.5": 0.98677,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.98677
+   },
+   "1618.7746943422753": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 1.0,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99996,
+    "Lease L=24h, q=0.5": 0.98339,
+    "Lease L=72h, q=0.0": 1.0,
+    "Lease L=72h, q=0.5": 0.983415,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.983415
+   },
+   "1874.6594304692983": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.999995,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.999905,
+    "Lease L=24h, q=0.5": 0.97909,
+    "Lease L=72h, q=0.0": 0.999995,
+    "Lease L=72h, q=0.5": 0.979135,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.97914
+   },
+   "2170.9926603932913": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.99999,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.999825,
+    "Lease L=24h, q=0.5": 0.97407,
+    "Lease L=72h, q=0.0": 0.99999,
+    "Lease L=72h, q=0.5": 0.974165,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.97417
+   },
+   "2514.168202968817": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.99999,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99972,
+    "Lease L=24h, q=0.5": 0.96791,
+    "Lease L=72h, q=0.0": 0.99999,
+    "Lease L=72h, q=0.5": 0.96807,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.968075
+   },
+   "2911.5905678254785": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.99999,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.999585,
+    "Lease L=24h, q=0.5": 0.96059,
+    "Lease L=72h, q=0.0": 0.99999,
+    "Lease L=72h, q=0.5": 0.96085,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.960855
+   },
+   "3371.8347183931182": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.999985,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99935,
+    "Lease L=24h, q=0.5": 0.9523,
+    "Lease L=72h, q=0.0": 0.999985,
+    "Lease L=72h, q=0.5": 0.952665,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.952675
+   },
+   "3904.831089163865": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.999985,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99887,
+    "Lease L=24h, q=0.5": 0.942795,
+    "Lease L=72h, q=0.0": 0.999985,
+    "Lease L=72h, q=0.5": 0.943405,
+    "Lease L=168h, q=0.0": 1.0,
+    "Lease L=168h, q=0.5": 0.943415
+   },
+   "4522.079849206572": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.999985,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99811,
+    "Lease L=24h, q=0.5": 0.931915,
+    "Lease L=72h, q=0.0": 0.999985,
+    "Lease L=72h, q=0.5": 0.93288,
+    "Lease L=168h, q=0.0": 0.999995,
+    "Lease L=168h, q=0.5": 0.932885
+   },
+   "5236.899034979491": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.999955,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.99708,
+    "Lease L=24h, q=0.5": 0.91946,
+    "Lease L=72h, q=0.0": 0.999955,
+    "Lease L=72h, q=0.5": 0.92096,
+    "Lease L=168h, q=0.0": 0.99999,
+    "Lease L=168h, q=0.5": 0.92098
+   },
+   "6064.711906266104": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.999895,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.995355,
+    "Lease L=24h, q=0.5": 0.905555,
+    "Lease L=72h, q=0.0": 0.999885,
+    "Lease L=72h, q=0.5": 0.90797,
+    "Lease L=168h, q=0.0": 0.99999,
+    "Lease L=168h, q=0.5": 0.908025
+   },
+   "7023.379725354946": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.999815,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.992975,
+    "Lease L=24h, q=0.5": 0.89,
+    "Lease L=72h, q=0.0": 0.9998,
+    "Lease L=72h, q=0.5": 0.893575,
+    "Lease L=168h, q=0.0": 0.99999,
+    "Lease L=168h, q=0.5": 0.893685
+   },
+   "8133.58713965638": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.99972,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.98946,
+    "Lease L=24h, q=0.5": 0.87298,
+    "Lease L=72h, q=0.0": 0.999695,
+    "Lease L=72h, q=0.5": 0.878355,
+    "Lease L=168h, q=0.0": 0.999985,
+    "Lease L=168h, q=0.5": 0.878525
+   },
+   "9419.288482944761": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.99954,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.98474,
+    "Lease L=24h, q=0.5": 0.853135,
+    "Lease L=72h, q=0.0": 0.999515,
+    "Lease L=72h, q=0.5": 0.86092,
+    "Lease L=168h, q=0.0": 0.999985,
+    "Lease L=168h, q=0.5": 0.861185
+   },
+   "10908.224624822082": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.99929,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.978335,
+    "Lease L=24h, q=0.5": 0.83184,
+    "Lease L=72h, q=0.0": 0.999255,
+    "Lease L=72h, q=0.5": 0.842935,
+    "Lease L=168h, q=0.0": 0.99998,
+    "Lease L=168h, q=0.5": 0.84333
+   },
+   "12632.5215201791": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.998745,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.969475,
+    "Lease L=24h, q=0.5": 0.808275,
+    "Lease L=72h, q=0.0": 0.99868,
+    "Lease L=72h, q=0.5": 0.823765,
+    "Lease L=168h, q=0.0": 0.999945,
+    "Lease L=168h, q=0.5": 0.8244
+   },
+   "14629.383373226136": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.998025,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.95794,
+    "Lease L=24h, q=0.5": 0.782225,
+    "Lease L=72h, q=0.0": 0.99795,
+    "Lease L=72h, q=0.5": 0.80363,
+    "Lease L=168h, q=0.0": 0.999865,
+    "Lease L=168h, q=0.5": 0.804535
+   },
+   "16941.895372111823": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.99682,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.943515,
+    "Lease L=24h, q=0.5": 0.75459,
+    "Lease L=72h, q=0.0": 0.99666,
+    "Lease L=72h, q=0.5": 0.782775,
+    "Lease L=168h, q=0.0": 0.999785,
+    "Lease L=168h, q=0.5": 0.784335
+   },
+   "19619.95331429252": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.994925,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.92559,
+    "Lease L=24h, q=0.5": 0.725615,
+    "Lease L=72h, q=0.0": 0.99468,
+    "Lease L=72h, q=0.5": 0.762005,
+    "Lease L=168h, q=0.0": 0.999665,
+    "Lease L=168h, q=0.5": 0.764445
+   },
+   "22721.340180666848": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.992415,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.90234,
+    "Lease L=24h, q=0.5": 0.692485,
+    "Lease L=72h, q=0.0": 0.99211,
+    "Lease L=72h, q=0.5": 0.739905,
+    "Lease L=168h, q=0.0": 0.99949,
+    "Lease L=168h, q=0.5": 0.743565
+   },
+   "26312.97288712237": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.98857,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.87402,
+    "Lease L=24h, q=0.5": 0.65719,
+    "Lease L=72h, q=0.0": 0.988135,
+    "Lease L=72h, q=0.5": 0.71743,
+    "Lease L=168h, q=0.0": 0.999165,
+    "Lease L=168h, q=0.5": 0.72303
+   },
+   "30472.346113965737": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.98362,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.84115,
+    "Lease L=24h, q=0.5": 0.619385,
+    "Lease L=72h, q=0.0": 0.9829,
+    "Lease L=72h, q=0.5": 0.69409,
+    "Lease L=168h, q=0.0": 0.998575,
+    "Lease L=168h, q=0.5": 0.70205
+   },
+   "35289.204365948484": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.976875,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.803365,
+    "Lease L=24h, q=0.5": 0.58009,
+    "Lease L=72h, q=0.0": 0.976035,
+    "Lease L=72h, q=0.5": 0.670685,
+    "Lease L=168h, q=0.0": 0.99776,
+    "Lease L=168h, q=0.5": 0.68185
+   },
+   "40867.47834000654": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.96739,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.75981,
+    "Lease L=24h, q=0.5": 0.538845,
+    "Lease L=72h, q=0.0": 0.966425,
+    "Lease L=72h, q=0.5": 0.647075,
+    "Lease L=168h, q=0.0": 0.99638,
+    "Lease L=168h, q=0.5": 0.662305
+   },
+   "47327.527380653504": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.95541,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.71123,
+    "Lease L=24h, q=0.5": 0.49584,
+    "Lease L=72h, q=0.0": 0.95397,
+    "Lease L=72h, q=0.5": 0.62245,
+    "Lease L=168h, q=0.0": 0.99429,
+    "Lease L=168h, q=0.5": 0.643015
+   },
+   "54808.73640725208": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.94001,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.659575,
+    "Lease L=24h, q=0.5": 0.451565,
+    "Lease L=72h, q=0.0": 0.93843,
+    "Lease L=72h, q=0.5": 0.59732,
+    "Lease L=168h, q=0.0": 0.99157,
+    "Lease L=168h, q=0.5": 0.624335
+   },
+   "63472.523345633665": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.921135,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.603905,
+    "Lease L=24h, q=0.5": 0.40675,
+    "Lease L=72h, q=0.0": 0.91902,
+    "Lease L=72h, q=0.5": 0.571125,
+    "Lease L=168h, q=0.0": 0.987435,
+    "Lease L=168h, q=0.5": 0.605715
+   },
+   "73505.82195375956": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.89703,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.547315,
+    "Lease L=24h, q=0.5": 0.362765,
+    "Lease L=72h, q=0.0": 0.89443,
+    "Lease L=72h, q=0.5": 0.544255,
+    "Lease L=168h, q=0.0": 0.981915,
+    "Lease L=168h, q=0.5": 0.588375
+   },
+   "85125.11518843666": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.8675,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.48815,
+    "Lease L=24h, q=0.5": 0.31945,
+    "Lease L=72h, q=0.0": 0.864485,
+    "Lease L=72h, q=0.5": 0.515265,
+    "Lease L=168h, q=0.0": 0.97445,
+    "Lease L=168h, q=0.5": 0.57097
+   },
+   "98581.10613881772": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.83392,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.42929,
+    "Lease L=24h, q=0.5": 0.277505,
+    "Lease L=72h, q=0.0": 0.83048,
+    "Lease L=72h, q=0.5": 0.48608,
+    "Lease L=168h, q=0.0": 0.96448,
+    "Lease L=168h, q=0.5": 0.55369
+   },
+   "114164.1273088458": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.794755,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.37309,
+    "Lease L=24h, q=0.5": 0.238295,
+    "Lease L=72h, q=0.0": 0.790625,
+    "Lease L=72h, q=0.5": 0.45542,
+    "Lease L=168h, q=0.0": 0.951605,
+    "Lease L=168h, q=0.5": 0.53619
+   },
+   "132210.40496175": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.74963,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.318965,
+    "Lease L=24h, q=0.5": 0.201415,
+    "Lease L=72h, q=0.0": 0.745355,
+    "Lease L=72h, q=0.5": 0.42296,
+    "Lease L=168h, q=0.0": 0.93536,
+    "Lease L=168h, q=0.5": 0.518495
+   },
+   "153109.313688903": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.70063,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.267845,
+    "Lease L=24h, q=0.5": 0.16775,
+    "Lease L=72h, q=0.0": 0.6956,
+    "Lease L=72h, q=0.5": 0.390085,
+    "Lease L=168h, q=0.0": 0.91503,
+    "Lease L=168h, q=0.5": 0.499895
+   },
+   "177311.7777308755": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.647575,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.22186,
+    "Lease L=24h, q=0.5": 0.13743,
+    "Lease L=72h, q=0.0": 0.64258,
+    "Lease L=72h, q=0.5": 0.355845,
+    "Lease L=168h, q=0.0": 0.889625,
+    "Lease L=168h, q=0.5": 0.479885
+   },
+   "205340.00032136592": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.59214,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.18045,
+    "Lease L=24h, q=0.5": 0.110865,
+    "Lease L=72h, q=0.0": 0.586675,
+    "Lease L=72h, q=0.5": 0.321145,
+    "Lease L=168h, q=0.0": 0.85898,
+    "Lease L=168h, q=0.5": 0.458025
+   },
+   "237798.7309786946": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.534085,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.14492,
+    "Lease L=24h, q=0.5": 0.08818,
+    "Lease L=72h, q=0.0": 0.528495,
+    "Lease L=72h, q=0.5": 0.286595,
+    "Lease L=168h, q=0.0": 0.82396,
+    "Lease L=168h, q=0.5": 0.435175
+   },
+   "275388.31385301036": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.47514,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.11393,
+    "Lease L=24h, q=0.5": 0.06877,
+    "Lease L=72h, q=0.0": 0.469635,
+    "Lease L=72h, q=0.5": 0.25277,
+    "Lease L=168h, q=0.0": 0.78314,
+    "Lease L=168h, q=0.5": 0.41046
+   },
+   "318919.79866620427": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.41672,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.088025,
+    "Lease L=24h, q=0.5": 0.052715,
+    "Lease L=72h, q=0.0": 0.41129,
+    "Lease L=72h, q=0.5": 0.21997,
+    "Lease L=168h, q=0.0": 0.73699,
+    "Lease L=168h, q=0.5": 0.383775
+   },
+   "369332.4402849581": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.361075,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.06702,
+    "Lease L=24h, q=0.5": 0.03993,
+    "Lease L=72h, q=0.0": 0.355575,
+    "Lease L=72h, q=0.5": 0.189005,
+    "Lease L=168h, q=0.0": 0.68677,
+    "Lease L=168h, q=0.5": 0.355645
+   },
+   "427713.96450557536": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.307465,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.04947,
+    "Lease L=24h, q=0.5": 0.029495,
+    "Lease L=72h, q=0.0": 0.30262,
+    "Lease L=72h, q=0.5": 0.1602,
+    "Lease L=168h, q=0.0": 0.63301,
+    "Lease L=168h, q=0.5": 0.32611
+   },
+   "495324.037314269": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.257005,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.036375,
+    "Lease L=24h, q=0.5": 0.02164,
+    "Lease L=72h, q=0.0": 0.252655,
+    "Lease L=72h, q=0.5": 0.132945,
+    "Lease L=168h, q=0.0": 0.576595,
+    "Lease L=168h, q=0.5": 0.295455
+   },
+   "573621.4440062061": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.211975,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.025995,
+    "Lease L=24h, q=0.5": 0.01541,
+    "Lease L=72h, q=0.0": 0.207795,
+    "Lease L=72h, q=0.5": 0.108655,
+    "Lease L=168h, q=0.0": 0.51804,
+    "Lease L=168h, q=0.5": 0.264695
+   },
+   "664295.5645921894": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.171835,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.01834,
+    "Lease L=24h, q=0.5": 0.01074,
+    "Lease L=72h, q=0.0": 0.1684,
+    "Lease L=72h, q=0.5": 0.08755,
+    "Lease L=168h, q=0.0": 0.459755,
+    "Lease L=168h, q=0.5": 0.23441
+   },
+   "769302.8246204851": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.137495,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.01268,
+    "Lease L=24h, q=0.5": 0.007285,
+    "Lease L=72h, q=0.0": 0.134405,
+    "Lease L=72h, q=0.5": 0.069425,
+    "Lease L=168h, q=0.0": 0.4018,
+    "Lease L=168h, q=0.5": 0.20432
+   },
+   "890908.9078930984": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.107555,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.008695,
+    "Lease L=24h, q=0.5": 0.005075,
+    "Lease L=72h, q=0.0": 0.105065,
+    "Lease L=72h, q=0.5": 0.054345,
+    "Lease L=168h, q=0.0": 0.346235,
+    "Lease L=168h, q=0.5": 0.1757
+   },
+   "1031737.6418770246": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.082995,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.005675,
+    "Lease L=24h, q=0.5": 0.00326,
+    "Lease L=72h, q=0.0": 0.08086,
+    "Lease L=72h, q=0.5": 0.04149,
+    "Lease L=168h, q=0.0": 0.293795,
+    "Lease L=168h, q=0.5": 0.148925
+   },
+   "1194827.6105840579": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.062765,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.003775,
+    "Lease L=24h, q=0.5": 0.00219,
+    "Lease L=72h, q=0.0": 0.060975,
+    "Lease L=72h, q=0.5": 0.03126,
+    "Lease L=168h, q=0.0": 0.24508,
+    "Lease L=168h, q=0.5": 0.12394
+   },
+   "1383697.716424085": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.04606,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.0023,
+    "Lease L=24h, q=0.5": 0.001305,
+    "Lease L=72h, q=0.0": 0.044645,
+    "Lease L=72h, q=0.5": 0.02287,
+    "Lease L=168h, q=0.0": 0.2008,
+    "Lease L=168h, q=0.5": 0.101145
+   },
+   "1602423.1056238476": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.033495,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.00144,
+    "Lease L=24h, q=0.5": 0.000845,
+    "Lease L=72h, q=0.0": 0.032525,
+    "Lease L=72h, q=0.5": 0.016525,
+    "Lease L=168h, q=0.0": 0.16219,
+    "Lease L=168h, q=0.5": 0.081535
+   },
+   "1855723.095412114": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.02408,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.000895,
+    "Lease L=24h, q=0.5": 0.000515,
+    "Lease L=72h, q=0.0": 0.02332,
+    "Lease L=72h, q=0.5": 0.01183,
+    "Lease L=168h, q=0.0": 0.12878,
+    "Lease L=168h, q=0.5": 0.064355
+   },
+   "2149063.0001276913": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.01686,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.000555,
+    "Lease L=24h, q=0.5": 0.000315,
+    "Lease L=72h, q=0.0": 0.016265,
+    "Lease L=72h, q=0.5": 0.008205,
+    "Lease L=168h, q=0.0": 0.100775,
+    "Lease L=168h, q=0.5": 0.05049
+   },
+   "2488772.053296117": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.011565,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.00033,
+    "Lease L=24h, q=0.5": 0.00017,
+    "Lease L=72h, q=0.0": 0.01113,
+    "Lease L=72h, q=0.5": 0.005575,
+    "Lease L=168h, q=0.0": 0.077205,
+    "Lease L=168h, q=0.5": 0.038615
+   },
+   "2882179.970014713": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.00793,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.000185,
+    "Lease L=24h, q=0.5": 0.000105,
+    "Lease L=72h, q=0.0": 0.007575,
+    "Lease L=72h, q=0.5": 0.003805,
+    "Lease L=168h, q=0.0": 0.05786,
+    "Lease L=168h, q=0.5": 0.028965
+   },
+   "3337775.096177382": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.005145,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 0.000105,
+    "Lease L=24h, q=0.5": 6e-05,
+    "Lease L=72h, q=0.0": 0.00497,
+    "Lease L=72h, q=0.5": 0.002455,
+    "Lease L=168h, q=0.0": 0.042525,
+    "Lease L=168h, q=0.5": 0.021285
+   },
+   "3865387.5568377716": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.00336,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 6.5e-05,
+    "Lease L=24h, q=0.5": 4.5e-05,
+    "Lease L=72h, q=0.0": 0.00324,
+    "Lease L=72h, q=0.5": 0.001625,
+    "Lease L=168h, q=0.0": 0.030745,
+    "Lease L=168h, q=0.5": 0.015315
+   },
+   "4476401.3554022405": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.002065,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 4e-05,
+    "Lease L=24h, q=0.5": 2.5e-05,
+    "Lease L=72h, q=0.0": 0.00197,
+    "Lease L=72h, q=0.5": 0.000985,
+    "Lease L=168h, q=0.0": 0.021985,
+    "Lease L=168h, q=0.5": 0.01093
+   },
+   "5184000.0": {
+    "B1 vs AFU tool": 1.0,
+    "B1 + 72 h reboot vs AFU tool": 0.00131,
+    "B2 vs passcode": 1.0,
+    "Lease L=24h, q=0.0": 2e-05,
+    "Lease L=24h, q=0.5": 1e-05,
+    "Lease L=72h, q=0.0": 0.00124,
+    "Lease L=72h, q=0.5": 0.000645,
+    "Lease L=168h, q=0.0": 0.01534,
+    "Lease L=168h, q=0.5": 0.007495
+   }
+  }
+ },
+ "lockout_model": [
+  {
+   "q_no_unlock_day": 0.005,
+   "lease_h": 24,
+   "expected_lockouts_per_year": 1.8158750000000001
+  },
+  {
+   "q_no_unlock_day": 0.005,
+   "lease_h": 72,
+   "expected_lockouts_per_year": 4.539687500000001e-05
+  },
+  {
+   "q_no_unlock_day": 0.005,
+   "lease_h": 168,
+   "expected_lockouts_per_year": 2.8373046875000004e-14
+  },
+  {
+   "q_no_unlock_day": 0.02,
+   "lease_h": 24,
+   "expected_lockouts_per_year": 7.154
+  },
+  {
+   "q_no_unlock_day": 0.02,
+   "lease_h": 72,
+   "expected_lockouts_per_year": 0.0028616000000000006
+  },
+  {
+   "q_no_unlock_day": 0.02,
+   "lease_h": 168,
+   "expected_lockouts_per_year": 4.578560000000001e-10
+  },
+  {
+   "q_no_unlock_day": 0.05,
+   "lease_h": 24,
+   "expected_lockouts_per_year": 17.337500000000002
+  },
+  {
+   "q_no_unlock_day": 0.05,
+   "lease_h": 72,
+   "expected_lockouts_per_year": 0.04334375000000001
+  },
+  {
+   "q_no_unlock_day": 0.05,
+   "lease_h": 168,
+   "expected_lockouts_per_year": 2.7089843750000007e-07
+  }
+ ],
+ "daily_traffic": [
+  {
+   "t": 2,
+   "n": 3,
+   "pq": false,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 1227,
+   "renew_bytes": 909,
+   "rotate_bytes": 2862,
+   "daily_kib": 22.9892578125
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "pq": false,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 1227,
+   "renew_bytes": 909,
+   "rotate_bytes": 2862,
+   "daily_kib": 64.927734375
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "pq": true,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 8043,
+   "renew_bytes": 909,
+   "rotate_bytes": 9678,
+   "daily_kib": 62.9267578125
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "pq": true,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 8043,
+   "renew_bytes": 909,
+   "rotate_bytes": 9678,
+   "daily_kib": 337.833984375
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "pq": false,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 2045,
+   "renew_bytes": 1515,
+   "rotate_bytes": 4770,
+   "daily_kib": 38.3154296875
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "pq": false,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 2045,
+   "renew_bytes": 1515,
+   "rotate_bytes": 4770,
+   "daily_kib": 108.212890625
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "pq": true,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 13405,
+   "renew_bytes": 1515,
+   "rotate_bytes": 16130,
+   "daily_kib": 104.8779296875
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "pq": true,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 13405,
+   "renew_bytes": 1515,
+   "rotate_bytes": 16130,
+   "daily_kib": 563.056640625
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "pq": false,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 3681,
+   "renew_bytes": 2727,
+   "rotate_bytes": 8586,
+   "daily_kib": 68.9677734375
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "pq": false,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 3681,
+   "renew_bytes": 2727,
+   "rotate_bytes": 8586,
+   "daily_kib": 194.783203125
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "pq": true,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 24129,
+   "renew_bytes": 2727,
+   "rotate_bytes": 29034,
+   "daily_kib": 188.7802734375
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "pq": true,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 24129,
+   "renew_bytes": 2727,
+   "rotate_bytes": 29034,
+   "daily_kib": 1013.501953125
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "pq": false,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 4499,
+   "renew_bytes": 3333,
+   "rotate_bytes": 10494,
+   "daily_kib": 84.2939453125
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "pq": false,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 4499,
+   "renew_bytes": 3333,
+   "rotate_bytes": 10494,
+   "daily_kib": 238.068359375
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "pq": true,
+   "mode": "background",
+   "unlocks_per_day": 5,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 29491,
+   "renew_bytes": 3333,
+   "rotate_bytes": 35486,
+   "daily_kib": 230.7314453125
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "pq": true,
+   "mode": "strict",
+   "unlocks_per_day": 40,
+   "renews_per_day": 16,
+   "rotations_per_day": 1,
+   "unlock_bytes": 29491,
+   "renew_bytes": 3333,
+   "rotate_bytes": 35486,
+   "daily_kib": 1238.724609375
+  }
+ ]
+}

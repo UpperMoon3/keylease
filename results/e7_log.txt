@@ -1,0 +1,2 @@
+{'mode': 'strict', 'burst': 200, 'processed_while_locked': 0, 'queued_ciphertexts': 200, 'delivered_after_unlock': 200, 'conversation_continues': True, 'afu_adversary_reads_session_during_lease': False, 'skipped_keys_in_session': 0, 'session_record_bytes': 220}
+{'mode': 'background', 'burst': 200, 'processed_while_locked': 200, 'queued_ciphertexts': 0, 'delivered_after_unlock': 200, 'conversation_continues': True, 'afu_adversary_reads_session_during_lease': True, 'skipped_keys_in_session': 0, 'session_record_bytes': 220}

@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+android/build/
+android/*.jks

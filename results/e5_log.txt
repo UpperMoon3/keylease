@@ -1,0 +1,11 @@
+AWS Frankfurt          n=100 median=86.2 p95=122.5
+AWS Stockholm          n=100 median=109.1 p95=138.2
+AWS UAE                n=99 median=197.6 p95=232.0
+AWS Mumbai             n=100 median=210.4 p95=247.1
+AWS Virginia           n=99 median=184.5 p95=208.1
+AWS Tokyo              n=100 median=148.2 p95=342.4
+Hetzner Falkenstein    n=100 median=94.3 p95=117.4
+Hetzner Helsinki       n=100 median=61.5 p95=94.1
+Yandex Moscow          n=100 median=49.6 p95=83.5
+Cloudflare anycast     n=100 median=10.4 p95=60.5
+Google anycast         n=100 median=85.4 p95=152.5

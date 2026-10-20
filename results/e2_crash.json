@@ -1,0 +1,457 @@
+{
+ "two_phase": [
+  {
+   "cases": 70,
+   "pre": 18,
+   "post": 22,
+   "fail": 30,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 10,
+   "t": 2,
+   "n": 3,
+   "w": 2,
+   "prior": "all"
+  },
+  {
+   "cases": 70,
+   "pre": 8,
+   "post": 22,
+   "fail": 40,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 10,
+   "t": 2,
+   "n": 3,
+   "w": 2,
+   "prior": "quorum"
+  },
+  {
+   "cases": 70,
+   "pre": 23,
+   "post": 17,
+   "fail": 30,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 10,
+   "t": 2,
+   "n": 3,
+   "w": 3,
+   "prior": "all"
+  },
+  {
+   "cases": 434,
+   "pre": 98,
+   "post": 126,
+   "fail": 210,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 14,
+   "t": 3,
+   "n": 5,
+   "w": 3,
+   "prior": "all"
+  },
+  {
+   "cases": 434,
+   "pre": 20,
+   "post": 126,
+   "fail": 288,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 14,
+   "t": 3,
+   "n": 5,
+   "w": 3,
+   "prior": "quorum"
+  },
+  {
+   "cases": 434,
+   "pre": 120,
+   "post": 104,
+   "fail": 210,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 14,
+   "t": 3,
+   "n": 5,
+   "w": 4,
+   "prior": "all"
+  },
+  {
+   "cases": 434,
+   "pre": 72,
+   "post": 104,
+   "fail": 258,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 14,
+   "t": 3,
+   "n": 5,
+   "w": 4,
+   "prior": "quorum"
+  },
+  {
+   "cases": 434,
+   "pre": 127,
+   "post": 97,
+   "fail": 210,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 14,
+   "t": 3,
+   "n": 5,
+   "w": 5,
+   "prior": "all"
+  },
+  {
+   "cases": 2286,
+   "pre": 593,
+   "post": 559,
+   "fail": 1134,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 18,
+   "t": 4,
+   "n": 7,
+   "w": 5,
+   "prior": "all"
+  },
+  {
+   "cases": 2286,
+   "pre": 203,
+   "post": 559,
+   "fail": 1524,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 18,
+   "t": 4,
+   "n": 7,
+   "w": 5,
+   "prior": "quorum"
+  },
+  {
+   "cases": 11242,
+   "pre": 2828,
+   "post": 2804,
+   "fail": 5610,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 22,
+   "t": 5,
+   "n": 9,
+   "w": 6,
+   "prior": "all"
+  },
+  {
+   "cases": 11242,
+   "pre": 538,
+   "post": 2804,
+   "fail": 7900,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 22,
+   "t": 5,
+   "n": 9,
+   "w": 6,
+   "prior": "quorum"
+  },
+  {
+   "cases": 53222,
+   "pre": 6682,
+   "post": 7930,
+   "fail": 38610,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 26,
+   "t": 7,
+   "n": 11,
+   "w": 7,
+   "prior": "all"
+  },
+  {
+   "cases": 53222,
+   "pre": 144,
+   "post": 7930,
+   "fail": 45148,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 26,
+   "t": 7,
+   "n": 11,
+   "w": 7,
+   "prior": "quorum"
+  },
+  {
+   "cases": 53222,
+   "pre": 7775,
+   "post": 6837,
+   "fail": 38610,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 26,
+   "t": 7,
+   "n": 11,
+   "w": 9,
+   "prior": "all"
+  },
+  {
+   "cases": 53222,
+   "pre": 2483,
+   "post": 6837,
+   "fail": 43902,
+   "mismatch": 0,
+   "guarantee_violations": 0,
+   "continued": 26,
+   "t": 7,
+   "n": 11,
+   "w": 9,
+   "prior": "quorum"
+  }
+ ],
+ "naive": [
+  {
+   "t": 2,
+   "n": 3,
+   "w": 2,
+   "order": "mask-first",
+   "crash_points": 7,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1"
+   ]
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "w": 2,
+   "order": "quorum-first",
+   "crash_points": 7,
+   "lost_with_all_custodians_up": [
+    "put:2",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "w": 3,
+   "order": "mask-first",
+   "crash_points": 7,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1"
+   ]
+  },
+  {
+   "t": 2,
+   "n": 3,
+   "w": 3,
+   "order": "quorum-first",
+   "crash_points": 7,
+   "lost_with_all_custodians_up": [
+    "put:2",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "w": 3,
+   "order": "mask-first",
+   "crash_points": 9,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1",
+    "put:2"
+   ]
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "w": 3,
+   "order": "quorum-first",
+   "crash_points": 9,
+   "lost_with_all_custodians_up": [
+    "put:3",
+    "put:4",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "w": 4,
+   "order": "mask-first",
+   "crash_points": 9,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1",
+    "put:2"
+   ]
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "w": 4,
+   "order": "quorum-first",
+   "crash_points": 9,
+   "lost_with_all_custodians_up": [
+    "put:3",
+    "put:4",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "w": 5,
+   "order": "mask-first",
+   "crash_points": 9,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1",
+    "put:2"
+   ]
+  },
+  {
+   "t": 3,
+   "n": 5,
+   "w": 5,
+   "order": "quorum-first",
+   "crash_points": 9,
+   "lost_with_all_custodians_up": [
+    "put:3",
+    "put:4",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 4,
+   "n": 7,
+   "w": 5,
+   "order": "mask-first",
+   "crash_points": 11,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1",
+    "put:2",
+    "put:3"
+   ]
+  },
+  {
+   "t": 4,
+   "n": 7,
+   "w": 5,
+   "order": "quorum-first",
+   "crash_points": 11,
+   "lost_with_all_custodians_up": [
+    "put:4",
+    "put:5",
+    "put:6",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "w": 6,
+   "order": "mask-first",
+   "crash_points": 13,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1",
+    "put:2",
+    "put:3",
+    "put:4"
+   ]
+  },
+  {
+   "t": 5,
+   "n": 9,
+   "w": 6,
+   "order": "quorum-first",
+   "crash_points": 13,
+   "lost_with_all_custodians_up": [
+    "put:5",
+    "put:6",
+    "put:7",
+    "put:8",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "w": 7,
+   "order": "mask-first",
+   "crash_points": 15,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1",
+    "put:2",
+    "put:3",
+    "put:4",
+    "put:5",
+    "put:6"
+   ]
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "w": 7,
+   "order": "quorum-first",
+   "crash_points": 15,
+   "lost_with_all_custodians_up": [
+    "put:5",
+    "put:6",
+    "put:7",
+    "put:8",
+    "put:9",
+    "put:10",
+    "before-promote"
+   ]
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "w": 9,
+   "order": "mask-first",
+   "crash_points": 15,
+   "lost_with_all_custodians_up": [
+    "after-pending",
+    "put:0",
+    "put:1",
+    "put:2",
+    "put:3",
+    "put:4",
+    "put:5",
+    "put:6"
+   ]
+  },
+  {
+   "t": 7,
+   "n": 11,
+   "w": 9,
+   "order": "quorum-first",
+   "crash_points": 15,
+   "lost_with_all_custodians_up": [
+    "put:5",
+    "put:6",
+    "put:7",
+    "put:8",
+    "put:9",
+    "put:10",
+    "before-promote"
+   ]
+  }
+ ]
+}

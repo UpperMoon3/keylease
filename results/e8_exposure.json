@@ -1,0 +1,635 @@
+{
+ "assumptions": {
+  "node_breach_rate_per_year": 0.2,
+  "provider_shock_rate_per_year": 0.05,
+  "epoch_s": 86400.0,
+  "overhead_s": 3603.0,
+  "terminal_window_no_revocation_s": 2851200.0,
+  "terminal_window_revoked_6h_s": 21600.0,
+  "domain": "provider (equal to home jurisdiction for the three providers)"
+ },
+ "rows": [
+  {
+   "placement": "P1 (2,3) three providers",
+   "t": 2,
+   "n": 3,
+   "f": 0,
+   "terminal": "no revocation",
+   "bound": 0.002032908894957407,
+   "per_epoch": 1.5254066251775115e-06,
+   "terminal_epoch": 0.0014761354767676154,
+   "simulated": 0.00155,
+   "wilson95": [
+    0.0010922182402673712,
+    0.002199229538443294
+   ]
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "t": 2,
+   "n": 3,
+   "f": 0,
+   "terminal": "revoked at 6 h",
+   "bound": 0.000556861355184739,
+   "per_epoch": 1.5254066251775115e-06,
+   "terminal_epoch": 8.793699494728323e-08
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "t": 2,
+   "n": 3,
+   "f": 1,
+   "terminal": "no revocation",
+   "bound": 0.8460008201658709,
+   "per_epoch": 0.0021381931073059905,
+   "terminal_epoch": 0.06556033599918427,
+   "simulated": 0.55445,
+   "wilson95": [
+    0.5475517629472608,
+    0.5613273235578033
+   ]
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "t": 2,
+   "n": 3,
+   "f": 1,
+   "terminal": "revoked at 6 h",
+   "bound": 0.7809540508762723,
+   "per_epoch": 0.0021381931073059905,
+   "terminal_epoch": 0.00051356670958584
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "t": 3,
+   "n": 5,
+   "f": 0,
+   "terminal": "no revocation",
+   "bound": 0.05664813117223503,
+   "per_epoch": 0.00014269049564931814,
+   "terminal_epoch": 0.00456610026023391,
+   "simulated": 0.05375,
+   "wilson95": [
+    0.05070922565119721,
+    0.056962172826583175
+   ]
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "t": 3,
+   "n": 5,
+   "f": 0,
+   "terminal": "revoked at 6 h",
+   "bound": 0.0521162769266307,
+   "per_epoch": 0.00014269049564931814,
+   "terminal_epoch": 3.424601462957564e-05
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "t": 3,
+   "n": 5,
+   "f": 1,
+   "terminal": "no revocation",
+   "bound": 0.06086232690397835,
+   "per_epoch": 0.000145940674158466,
+   "terminal_epoch": 0.007593980836138261,
+   "simulated": 0.0547,
+   "wilson95": [
+    0.051633142915808,
+    0.05793789068005891
+   ]
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "t": 3,
+   "n": 5,
+   "f": 1,
+   "terminal": "revoked at 6 h",
+   "bound": 0.05330277962571966,
+   "per_epoch": 0.000145940674158466,
+   "terminal_epoch": 3.443355787957058e-05
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "t": 3,
+   "n": 5,
+   "f": 0,
+   "terminal": "no revocation",
+   "bound": 0.0007977596892849244,
+   "per_epoch": 5.513270553235402e-07,
+   "terminal_epoch": 0.0005965253140918322,
+   "simulated": 0.00065,
+   "wilson95": [
+    0.0003799143962202306,
+    0.001111879060092681
+   ]
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "t": 3,
+   "n": 5,
+   "f": 0,
+   "terminal": "revoked at 6 h",
+   "bound": 0.00020126606270077347,
+   "per_epoch": 5.513270553235402e-07,
+   "terminal_epoch": 3.168750768129697e-08
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "t": 3,
+   "n": 5,
+   "f": 1,
+   "terminal": "no revocation",
+   "bound": 0.11782877720945462,
+   "per_epoch": 0.00028893334504408934,
+   "terminal_epoch": 0.012368106268361998,
+   "simulated": 0.104,
+   "wilson95": [
+    0.09984507650776556,
+    0.10830702163722278
+   ]
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "t": 3,
+   "n": 5,
+   "f": 1,
+   "terminal": "revoked at 6 h",
+   "bound": 0.10552936806077332,
+   "per_epoch": 0.00028893334504408934,
+   "terminal_epoch": 6.869711968069879e-05
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "t": 3,
+   "n": 5,
+   "f": 0,
+   "terminal": "no revocation",
+   "bound": 0.05666572938674039,
+   "per_epoch": 0.0001426910869155846,
+   "terminal_epoch": 0.00458348266255201,
+   "simulated": 0.05165,
+   "wilson95": [
+    0.048667858297441885,
+    0.054804346761410425
+   ]
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "t": 3,
+   "n": 5,
+   "f": 0,
+   "terminal": "revoked at 6 h",
+   "bound": 0.05211649274700667,
+   "per_epoch": 0.0001426910869155846,
+   "terminal_epoch": 3.4246022818288604e-05
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "t": 3,
+   "n": 5,
+   "f": 1,
+   "terminal": "no revocation",
+   "bound": 0.061723153052787055,
+   "per_epoch": 0.00014661074235189603,
+   "terminal_epoch": 0.00821023209434501,
+   "simulated": 0.0568,
+   "wilson95": [
+    0.053676419704568316,
+    0.0600938073102267
+   ]
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "t": 3,
+   "n": 5,
+   "f": 1,
+   "terminal": "revoked at 6 h",
+   "bound": 0.05354739319322333,
+   "per_epoch": 0.00014661074235189603,
+   "terminal_epoch": 3.447223478128658e-05
+  },
+  {
+   "placement": "P5 (4,7) balanced",
+   "t": 4,
+   "n": 7,
+   "f": 0,
+   "terminal": "no revocation",
+   "bound": 0.05661104896497134,
+   "per_epoch": 0.00014268915402537887,
+   "terminal_epoch": 0.0045295077457080625,
+   "simulated": 0.05325,
+   "wilson95": [
+    0.050223062327468954,
+    0.0564485281934238
+   ]
+  },
+  {
+   "placement": "P5 (4,7) balanced",
+   "t": 4,
+   "n": 7,
+   "f": 0,
+   "terminal": "revoked at 6 h",
+   "bound": 0.05211578721527825,
+   "per_epoch": 0.00014268915402537887,
+   "terminal_epoch": 3.424599601496486e-05
+  },
+  {
+   "placement": "P5 (4,7) balanced",
+   "t": 4,
+   "n": 7,
+   "f": 1,
+   "terminal": "no revocation",
+   "bound": 0.05736552735386713,
+   "per_epoch": 0.00014312271508403897,
+   "terminal_epoch": 0.005125736348192904,
+   "simulated": 0.0558,
+   "wilson95": [
+    0.052703273245486335,
+    0.05906733785553339
+   ]
+  },
+  {
+   "placement": "P5 (4,7) balanced",
+   "t": 4,
+   "n": 7,
+   "f": 1,
+   "terminal": "revoked at 6 h",
+   "bound": 0.05227406171341645,
+   "per_epoch": 0.00014312271508403897,
+   "terminal_epoch": 3.4270707742219074e-05
+  },
+  {
+   "placement": "P6 (5,9) global",
+   "t": 5,
+   "n": 9,
+   "f": 0,
+   "terminal": "no revocation",
+   "bound": 0.05659289196098459,
+   "per_epoch": 0.00014268864043741043,
+   "terminal_epoch": 0.004511538201329778,
+   "simulated": 0.0543,
+   "wilson95": [
+    0.05124409237028091,
+    0.057527094860075886
+   ]
+  },
+  {
+   "placement": "P6 (5,9) global",
+   "t": 5,
+   "n": 9,
+   "f": 0,
+   "terminal": "revoked at 6 h",
+   "bound": 0.05211559974859342,
+   "per_epoch": 0.00014268864043741043,
+   "terminal_epoch": 3.4245988938615685e-05
+  },
+  {
+   "placement": "P6 (5,9) global",
+   "t": 5,
+   "n": 9,
+   "f": 1,
+   "terminal": "no revocation",
+   "bound": 0.05663582809039301,
+   "per_epoch": 0.00014268969738691519,
+   "terminal_epoch": 0.004554088544168973,
+   "simulated": 0.0539,
+   "wilson95": [
+    0.050855089398703875,
+    0.05711625146614282
+   ]
+  },
+  {
+   "placement": "P6 (5,9) global",
+   "t": 5,
+   "n": 9,
+   "f": 1,
+   "terminal": "revoked at 6 h",
+   "bound": 0.05211598554965839,
+   "per_epoch": 0.00014268969738691519,
+   "terminal_epoch": 3.4246003434350884e-05
+  },
+  {
+   "placement": "B4 single custodian",
+   "t": 1,
+   "n": 1,
+   "f": 0,
+   "terminal": "no revocation",
+   "bound": 0.2826816748803706,
+   "per_epoch": 0.0007132396255879476,
+   "terminal_epoch": 0.022349211540769732,
+   "simulated": 0.23655,
+   "wilson95": [
+    0.23071124640141782,
+    0.2424899411144842
+   ]
+  },
+  {
+   "placement": "B4 single custodian",
+   "t": 1,
+   "n": 1,
+   "f": 0,
+   "terminal": "revoked at 6 h",
+   "bound": 0.2605036815568009,
+   "per_epoch": 0.0007132396255879476,
+   "terminal_epoch": 0.0001712182172000551
+  },
+  {
+   "placement": "B4 single custodian",
+   "t": 1,
+   "n": 1,
+   "f": 1,
+   "terminal": "no revocation",
+   "bound": 1.0,
+   "per_epoch": 1.0,
+   "terminal_epoch": 1.0,
+   "simulated": 1.0,
+   "wilson95": [
+    0.9998079568876411,
+    1.0
+   ]
+  },
+  {
+   "placement": "B4 single custodian",
+   "t": 1,
+   "n": 1,
+   "f": 1,
+   "terminal": "revoked at 6 h",
+   "bound": 1.0,
+   "per_epoch": 1.0,
+   "terminal_epoch": 1.0
+  }
+ ],
+ "validation": [
+  {
+   "placement": "P1 (2,3) three providers",
+   "ell_s": 90003.0,
+   "k": 1,
+   "pgf": 0.0021381931073059905,
+   "enumeration": 0.0021381931073059875,
+   "abs_diff": 3.0357660829594124e-18
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "ell_s": 90003.0,
+   "k": 2,
+   "pgf": 1.5254066251775115e-06,
+   "enumeration": 1.5254066251775104e-06,
+   "abs_diff": 1.0587911840678754e-21
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "ell_s": 90003.0,
+   "k": 3,
+   "pgf": 3.628326744976009e-10,
+   "enumeration": 3.62832674497601e-10,
+   "abs_diff": 1.0339757656912846e-25
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "ell_s": 2851200.0,
+   "k": 1,
+   "pgf": 0.06556033599918427,
+   "enumeration": 0.0655603359991843,
+   "abs_diff": 2.7755575615628914e-17
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "ell_s": 2851200.0,
+   "k": 2,
+   "pgf": 0.0014761354767676154,
+   "enumeration": 0.0014761354767676175,
+   "abs_diff": 2.168404344971009e-18
+  },
+  {
+   "placement": "P1 (2,3) three providers",
+   "ell_s": 2851200.0,
+   "k": 3,
+   "pgf": 1.1163146357304791e-05,
+   "enumeration": 1.1163146357304798e-05,
+   "abs_diff": 6.776263578034403e-21
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 90003.0,
+   "k": 1,
+   "pgf": 0.003276692755527166,
+   "enumeration": 0.0032766927555271737,
+   "abs_diff": 7.806255641895632e-18
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 90003.0,
+   "k": 2,
+   "pgf": 0.00028893334504408934,
+   "enumeration": 0.00028893334504408955,
+   "abs_diff": 2.168404344971009e-19
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 90003.0,
+   "k": 3,
+   "pgf": 5.513270553235402e-07,
+   "enumeration": 5.513270553235396e-07,
+   "abs_diff": 6.352747104407253e-22
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 90003.0,
+   "k": 4,
+   "pgf": 2.0685725221625832e-08,
+   "enumeration": 2.0685725221625812e-08,
+   "abs_diff": 1.9852334701272664e-23
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 90003.0,
+   "k": 5,
+   "pgf": 1.458793677088609e-11,
+   "enumeration": 1.4587936770886092e-11,
+   "abs_diff": 3.2311742677852644e-27
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 2851200.0,
+   "k": 1,
+   "pgf": 0.09875001113651871,
+   "enumeration": 0.09875001113651857,
+   "abs_diff": 1.3877787807814457e-16
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 2851200.0,
+   "k": 2,
+   "pgf": 0.012368106268361998,
+   "enumeration": 0.012368106268361977,
+   "abs_diff": 2.0816681711721685e-17
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 2851200.0,
+   "k": 3,
+   "pgf": 0.0005965253140918322,
+   "enumeration": 0.0005965253140918324,
+   "abs_diff": 2.168404344971009e-19
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 2851200.0,
+   "k": 4,
+   "pgf": 3.089359963642095e-05,
+   "enumeration": 3.089359963642095e-05,
+   "abs_diff": 0.0
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "ell_s": 2851200.0,
+   "k": 5,
+   "pgf": 5.213852396962668e-07,
+   "enumeration": 5.213852396962672e-07,
+   "abs_diff": 4.235164736271502e-22
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 90003.0,
+   "k": 1,
+   "pgf": 0.0029921896787953334,
+   "enumeration": 0.0029921896787953343,
+   "abs_diff": 8.673617379884035e-19
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 90003.0,
+   "k": 2,
+   "pgf": 0.000145940674158466,
+   "enumeration": 0.00014594067415846617,
+   "abs_diff": 1.6263032587282567e-19
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 90003.0,
+   "k": 3,
+   "pgf": 0.00014269049564931814,
+   "enumeration": 0.0001426904956493183,
+   "abs_diff": 1.6263032587282567e-19
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 90003.0,
+   "k": 4,
+   "pgf": 0.0001426886399331942,
+   "enumeration": 0.00014268863993319435,
+   "abs_diff": 1.6263032587282567e-19
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 90003.0,
+   "k": 5,
+   "pgf": 0.000142688639403426,
+   "enumeration": 0.00014268863940342617,
+   "abs_diff": 1.6263032587282567e-19
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 2851200.0,
+   "k": 1,
+   "pgf": 0.09056477758121437,
+   "enumeration": 0.09056477758121427,
+   "abs_diff": 9.71445146547012e-17
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 2851200.0,
+   "k": 2,
+   "pgf": 0.007593980836138261,
+   "enumeration": 0.0075939808361382595,
+   "abs_diff": 1.734723475976807e-18
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 2851200.0,
+   "k": 3,
+   "pgf": 0.00456610026023391,
+   "enumeration": 0.004566100260233909,
+   "abs_diff": 8.673617379884035e-19
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 2851200.0,
+   "k": 4,
+   "pgf": 0.004510851539348974,
+   "enumeration": 0.004510851539348973,
+   "abs_diff": 8.673617379884035e-19
+  },
+  {
+   "placement": "P2 (3,5) one provider",
+   "ell_s": 2851200.0,
+   "k": 5,
+   "pgf": 0.004510347486913136,
+   "enumeration": 0.004510347486913136,
+   "abs_diff": 0.0
+  }
+ ],
+ "sensitivity": [
+  {
+   "placement": "P3 (3,5) balanced",
+   "rate_multiplier": 0.5,
+   "bound_f0": 0.00019401404451343298
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "rate_multiplier": 1,
+   "bound_f0": 0.0007977596892849244
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "rate_multiplier": 2,
+   "bound_f0": 0.0033432574905072447
+  },
+  {
+   "placement": "P3 (3,5) balanced",
+   "rate_multiplier": 4,
+   "bound_f0": 0.01428997391446989
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "rate_multiplier": 0.5,
+   "bound_f0": 0.028308877840339024
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "rate_multiplier": 1,
+   "bound_f0": 0.05666572938674039
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "rate_multiplier": 2,
+   "bound_f0": 0.11371175356275831
+  },
+  {
+   "placement": "P4 (3,5) AWS-heavy",
+   "rate_multiplier": 4,
+   "bound_f0": 0.23012740179396712
+  },
+  {
+   "placement": "B4 single custodian",
+   "rate_multiplier": 0.5,
+   "bound_f0": 0.1414271991539464
+  },
+  {
+   "placement": "B4 single custodian",
+   "rate_multiplier": 1,
+   "bound_f0": 0.2826816748803706
+  },
+  {
+   "placement": "B4 single custodian",
+   "rate_multiplier": 2,
+   "bound_f0": 0.5646781830755983
+  },
+  {
+   "placement": "B4 single custodian",
+   "rate_multiplier": 4,
+   "bound_f0": 1.0
+  }
+ ]
+}
